@@ -1,0 +1,38 @@
+name: Continuous Delivery
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.6
+
+      - name: Install pnpm
+        run: |
+          npm install --global pnpm
+
+      - name: Clone repository
+        uses: actions/checkout@master
+
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Lint code
+        run: |
+          pnpm run lint
+
+      - name: Release new version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          pnpx semantic-release

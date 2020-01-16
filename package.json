@@ -1,0 +1,45 @@
+{
+  "name": "@theisleoffavalon/eslint-ts-config",
+  "description": "Shared ESLint config for Typescript",
+  "version": "0.0.0",
+  "author": "James Durand",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/durandj/theisleoffavalon-eslint-ts-config#readme",
+  "bugs": {
+    "url": "https://github.com/durandj/theisleoffavalon-eslint-ts-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/durandj/theisleoffavalon-eslint-ts-config.git"
+  },
+  "scripts": {
+    "lint": "eslint ./index.js '**/*.js'"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "babel-eslint": "^10.0.3",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.0",
+    "marked-terminal": "^4.0.0",
+    "semantic-release": "^16.0.2",
+    "typescript": "^3.7.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "babel-eslint": "^10.0.3",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.0",
+    "typescript": "^3.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branch": "master"
+  }
+}

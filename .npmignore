@@ -1,0 +1,7 @@
+.pnpm-store
+.editorconfig
+.eslintignore
+.eslintrc.json
+.github
+.node-version
+.vscode
