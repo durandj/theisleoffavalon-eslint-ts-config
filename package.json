@@ -1,5 +1,5 @@
 {
-  "name": "@theisleoffavalon/eslint-ts-config",
+  "name": "@theisleoffavalon/eslint-config-ts",
   "description": "Shared ESLint config for Typescript",
   "version": "0.0.0",
   "author": "James Durand",
