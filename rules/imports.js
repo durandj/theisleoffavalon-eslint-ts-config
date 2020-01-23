@@ -266,7 +266,7 @@ module.exports = {
         // CommonJS module.exports or exports object are present in a
         // single file.
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/group-exports.md
-        'import/group-exports': 'error',
+        'import/group-exports': 'off',
 
         // Forbid default exports. This is a terrible rule, do not use
         // it.
