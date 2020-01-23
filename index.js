@@ -24,6 +24,19 @@ module.exports = {
         '@typescript-eslint',
         'import',
     ],
+    settings: {
+        'import/parsers': {
+            '@typescript-eslint/parser': [ '.ts', '.tsx' ],
+        },
+        'import/resolver': {
+            node: {
+                extensions: [ '.js', '.jsx', '.ts', '.tsx' ],
+            },
+            typescript: {
+                directory: './tsconfig.json',
+            },
+        },
+    },
     rules: {},
     overrides: [
         {
