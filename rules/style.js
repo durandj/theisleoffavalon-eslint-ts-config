@@ -21,9 +21,9 @@ module.exports = {
         // https://eslint.org/docs/rules/brace-style
         'brace-style': [
             'error',
-            '1tbs',
+            'stroustrup',
             {
-                allowSingleLine: true,
+                allowSingleLine: false,
             },
         ],
 
